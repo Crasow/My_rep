@@ -1,13 +1,11 @@
-result = {}
-with open('txt.txt') as f:
-    for line in f:
-        if 'line protocol' in line:
-            interface = line.split()[0]
-        elif 'Internet address' in line:
-            ip_address = line.split()[-1]
-            result[interface] = {}
-            result[interface]['ip'] = ip_address
-        elif 'MTU' in line:
-            mtu = line.split()[-2]
-            result[interface]['mtu'] = mtu
-print(result)
+from sys import argv
+
+interface = argv[1]
+vlan = argv[2]
+access_template = ['switchport mode access',
+                   'switchport access vlan {}',
+                   'switchport nonegotiate',
+                   'spanning-tree portfast',
+                   'spanning-tree bpduguard enable']
+print('interface {}'.format(interface))
+print('\n'.join(access_template).format(vlan))
