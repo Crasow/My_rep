@@ -4,20 +4,21 @@ import json
 import socket
 import sys
 
+sys.path.append('D:\Python\Projects\Client-server applications\Homework\Lesson-3\common')
 from common.utils import get_message, send_message
 from common.variables import ACTION, ACCOUNT_NAME, RESPONSE, MAX_CONNECTIONS, \
     PRESENCE, TIME, USER, ERROR, DEFAULT_PORT
 
 
 def process_client_message(message):
-    '''
+    """
     Обработчик сообщений от клиентов, принимает словарь -
     сообщение от клинта, проверяет корректность,
     возвращает словарь-ответ для клиента
 
     :param message:
     :return:
-    '''
+    """
     if ACTION in message and message[ACTION] == PRESENCE and TIME in message \
             and USER in message and message[USER][ACCOUNT_NAME] == 'Guest':
         return {RESPONSE: 200}
@@ -28,12 +29,12 @@ def process_client_message(message):
 
 
 def main():
-    '''
+    """
     Загрузка параметров командной строки, если нет параметров, то задаём значения по умоланию.
     Сначала обрабатываем порт:
     server.py -p 8079 -a 192.168.0.100
     :return:
-    '''
+    """
 
     try:
         if '-p' in sys.argv:
