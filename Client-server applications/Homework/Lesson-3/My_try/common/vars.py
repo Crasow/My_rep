@@ -1,0 +1,13 @@
+DEFAULT_PORT = 7777
+
+DEFAULT_IP_ADDRESS = '127.0.0.1'
+
+MAX_CONNCTIONS = 5
+
+ENCODING = 'utf-8'
+
+MAX_PACKAGE_LENGTH = 1024
+
+ACTION = 'action'
+PRESENCE = 'presence'
+GUEST = 'guest'

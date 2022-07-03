@@ -5,9 +5,9 @@ import socket
 import sys
 import time
 
-sys.path.append('D:\Python\Projects\Client-server applications\Homework\Lesson-3\common')
-from common.utils import get_message, send_message
-from common.variables import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, \
+sys.path.append('/Client-server applications/Homework/Lesson-3/Example/common')
+from common.utils_for_ex import get_message, send_message
+from common.vars_for_ex import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, \
     RESPONSE, ERROR, DEFAULT_IP_ADDRESS, DEFAULT_PORT
 
 
@@ -43,7 +43,7 @@ def process_ans(message):
 
 def main():
     """Загружаем параметы коммандной строки"""
-    # client.py 192.168.0.100 8079
+    # client_for_ex.py 192.168.0.100 8079
     try:
         server_address = sys.argv[2]
         server_port = int(sys.argv[3])

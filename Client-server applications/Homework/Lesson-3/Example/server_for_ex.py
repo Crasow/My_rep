@@ -4,9 +4,9 @@ import json
 import socket
 import sys
 
-sys.path.append('D:\Python\Projects\Client-server applications\Homework\Lesson-3\common')
-from common.utils import get_message, send_message
-from common.variables import ACTION, ACCOUNT_NAME, RESPONSE, MAX_CONNECTIONS, \
+sys.path.append('/Client-server applications/Homework/Lesson-3/Example/common')
+from common.utils_for_ex import get_message, send_message
+from common.vars_for_ex import ACTION, ACCOUNT_NAME, RESPONSE, MAX_CONNECTIONS, \
     PRESENCE, TIME, USER, ERROR, DEFAULT_PORT
 
 
@@ -32,7 +32,7 @@ def main():
     """
     Загрузка параметров командной строки, если нет параметров, то задаём значения по умоланию.
     Сначала обрабатываем порт:
-    server.py -p 8079 -a 192.168.0.100
+    server_for_ex.py -p 8079 -a 192.168.0.100
     :return:
     """
 
