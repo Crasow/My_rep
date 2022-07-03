@@ -1,0 +1,28 @@
+nums = [7, 9, 10, 1, 10, 6]
+
+
+def prepare(numbers, low, high):
+    pivot = numbers[high]
+    item = low - 1
+
+    for i in range(low, high):
+        if numbers[i] <= pivot:
+            item = item + 1
+            (numbers[item], numbers[i]) = (numbers[i], numbers[item])
+
+    (numbers[item + 1], numbers[high]) = (numbers[high], numbers[item + 1])
+
+    return item + 1
+
+
+def qsort(numbers, low, high):
+    if low < high:
+        pivot = prepare(numbers, low, high)
+
+        qsort(numbers, low, pivot - 1)
+
+        qsort(numbers, pivot + 1, high)
+
+
+print(qsort(nums, 0, len(nums) - 1))
+print(nums)
