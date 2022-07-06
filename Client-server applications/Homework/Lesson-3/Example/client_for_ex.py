@@ -5,7 +5,6 @@ import socket
 import sys
 import time
 
-sys.path.append('/Client-server applications/Homework/Lesson-3/Example/common')
 from common.utils_for_ex import get_message, send_message
 from common.vars_for_ex import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, \
     RESPONSE, ERROR, DEFAULT_IP_ADDRESS, DEFAULT_PORT
