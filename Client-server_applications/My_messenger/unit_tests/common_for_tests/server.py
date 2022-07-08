@@ -1,14 +1,14 @@
 import json
 from socket import socket, AF_INET, SOCK_STREAM
 
-from common.utils import get_msg, send_msg
-from common.vars import PORT, IP, ACTION, TIME, \
-    USER, LOGIN, GUEST, RESPONSE, ERROR, STATUS, STATUS_HERE
+from utils import get_msg, send_msg
+from vars import PORT, IP, ACTION, TIME, \
+    USER, ACC_LOGIN, GUEST, RESPONSE, ERROR, STATUS, STATUS_HERE
 
 
 def data_check(data):
     if ACTION in data and TIME in data and USER in data \
-            and data[USER][LOGIN] == GUEST \
+            and data[USER][ACC_LOGIN] == GUEST \
             and data[USER][STATUS] == STATUS_HERE:
         return {RESPONSE: 200}
     else:

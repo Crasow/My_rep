@@ -12,7 +12,7 @@ ENCODING = 'utf-8'
 ACTION = 'action'
 TIME = 'time'
 USER = 'user'
-LOGIN = 'account_login'
+ACC_LOGIN = 'account_login'
 ACC_PASS = 'account_password'
 
 # other
@@ -22,5 +22,6 @@ GUEST = 'guest'
 GUEST_PASS = 1234
 RESPONSE = 'response'
 ERROR = 'error'
+ERROR_TEXT = 'Bad Request'
 STATUS_HERE = 'all right'
 STATUS = 'status'

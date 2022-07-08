@@ -1,24 +1,20 @@
 """Программа-сервер"""
 
-import json
 import socket
 import sys
-
-sys.path.append('/Client-server applications/Homework/Lesson-3/Example/common')
-from common.utils_for_ex import get_message, send_message
-from common.vars_for_ex import ACTION, ACCOUNT_NAME, RESPONSE, MAX_CONNECTIONS, \
+import json
+from common.variables import ACTION, ACCOUNT_NAME, RESPONSE, MAX_CONNECTIONS, \
     PRESENCE, TIME, USER, ERROR, DEFAULT_PORT
+from common.utils import get_message, send_message
 
 
 def process_client_message(message):
-    """
-    Обработчик сообщений от клиентов, принимает словарь -
-    сообщение от клинта, проверяет корректность,
-    возвращает словарь-ответ для клиента
-
+    '''
+    Обработчик сообщений от клиентов, принимает словарь - сообщение от клинта,
+    проверяет корректность, возвращает словарь-ответ для клиента
     :param message:
     :return:
-    """
+    '''
     if ACTION in message and message[ACTION] == PRESENCE and TIME in message \
             and USER in message and message[USER][ACCOUNT_NAME] == 'Guest':
         return {RESPONSE: 200}
@@ -29,13 +25,11 @@ def process_client_message(message):
 
 
 def main():
-    """
+    '''
     Загрузка параметров командной строки, если нет параметров, то задаём значения по умоланию.
     Сначала обрабатываем порт:
-    server_for_ex.py -p 8079 -a 192.168.0.100
     :return:
-    """
-
+    '''
     try:
         if '-p' in sys.argv:
             listen_port = int(sys.argv[sys.argv.index('-p') + 1])
@@ -47,21 +41,19 @@ def main():
         print('После параметра -\'p\' необходимо указать номер порта.')
         sys.exit(1)
     except ValueError:
-        print(
-            'В качастве порта может быть указано только число в диапазоне от 1024 до 65535.')
+        print('В качастве порта может быть указано только число в диапазоне от 1024 до 65535.')
         sys.exit(1)
 
     # Затем загружаем какой адрес слушать
 
     try:
         if '-a' in sys.argv:
-            listen_address = sys.argv[sys.argv.index('-a') + 1]
+            listen_address = int(sys.argv[sys.argv.index('-a') + 1])
         else:
             listen_address = ''
 
     except IndexError:
-        print(
-            'После параметра \'a\'- необходимо указать адрес, который будет слушать сервер.')
+        print('После параметра \'a\'- необходимо указать адрес, который будет слушать сервер.')
         sys.exit(1)
 
     # Готовим сокет
@@ -78,7 +70,6 @@ def main():
         try:
             message_from_cient = get_message(client)
             print(message_from_cient)
-            # {'action': 'presence', 'time': 1573760672.167031, 'user': {'account_name': 'Guest'}}
             response = process_client_message(message_from_cient)
             send_message(client, response)
             client.close()

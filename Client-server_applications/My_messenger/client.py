@@ -8,13 +8,13 @@ from common.vars import PORT, IP, GUEST, STATUS_HERE, PRESENCE, \
     RESPONSE, ERROR
 
 
-def presence(acc_login=GUEST, status_here=STATUS_HERE):
+def presence(acc_login, status):
     data = {
         "action": PRESENCE,
         "time": time.time(),
         "user": {
             "account_login": acc_login,
-            "status": status_here
+            "status": status
         },
     }
     return data
@@ -41,7 +41,7 @@ def main():
     client = socket(AF_INET, SOCK_STREAM)  # Создание сокета TCP
     client.connect((server_address, server_port))
 
-    send_msg(presence(), client)  # Отправка серверу присутствие
+    send_msg(presence(GUEST, STATUS_HERE), client)  # Отправка серверу присутствие
 
     try:
         server_data = process_ans(get_msg(client))  # Получение ответа
