@@ -1,0 +1,50 @@
+2022-07-09 14:59:26,963 --- INFO --- server.py --- 
+
+--------------------------------------------------------------------------------------------------------------
+
+2022-07-09 14:59:26,963 --- INFO --- server.py --- The server started it`s work at 26.232.94.177 : 7777 
+and ready to listen at once 10 clients
+2022-07-09 14:59:28,545 --- INFO --- server.py --- Client connected from the address ('26.232.94.177', 63926) 
+2022-07-09 14:59:28,545 --- INFO --- server.py --- Started to check msg from client
+2022-07-09 14:59:28,545 --- INFO --- server.py --- Data check succed
+2022-07-09 14:59:28,545 --- INFO --- server.py --- Messaging ended
+2022-07-09 15:10:02,627 --- INFO --- server.py --- Client connected from the address ('26.232.94.177', 64006) 
+2022-07-09 15:10:02,627 --- INFO --- server.py --- Started to check msg from client
+2022-07-09 15:10:02,627 --- INFO --- server.py --- Data check succed
+2022-07-09 15:10:02,627 --- INFO --- server.py --- Messaging ended
+2022-07-09 15:10:17,976 --- INFO --- server.py --- Client connected from the address ('26.232.94.177', 64008) 
+2022-07-09 15:10:17,976 --- INFO --- server.py --- Started to check msg from client
+2022-07-09 15:10:17,976 --- INFO --- server.py --- Data check succed
+2022-07-09 15:10:17,976 --- INFO --- server.py --- Messaging ended
+2022-07-09 15:12:03,906 --- INFO --- server.py --- 
+
+--------------------------------------------------------------------------------------------------------------
+
+2022-07-09 15:12:03,906 --- INFO --- server.py --- The server started it`s work at 26.232.94.177 : 7777 
+and ready to listen at once 10 clients
+2022-07-09 15:12:05,597 --- INFO --- server.py --- Client connected from the address ('26.232.94.177', 64021) 
+2022-07-09 15:12:05,597 --- INFO --- server.py --- Started to check message from client
+2022-07-09 15:12:05,597 --- INFO --- server.py --- Data check succeeded
+2022-07-09 15:12:05,597 --- INFO --- server.py --- Messaging ended
+2022-07-09 15:12:11,111 --- INFO --- server.py --- Client connected from the address ('26.232.94.177', 64022) 
+2022-07-09 15:12:11,111 --- INFO --- server.py --- Started to check message from client
+2022-07-09 15:12:11,112 --- INFO --- server.py --- Data check succeeded
+2022-07-09 15:12:11,112 --- INFO --- server.py --- Messaging ended
+2022-07-09 15:12:17,033 --- INFO --- server.py --- Client connected from the address ('26.232.94.177', 64024) 
+2022-07-09 15:12:17,033 --- INFO --- server.py --- Started to check message from client
+2022-07-09 15:12:17,033 --- INFO --- server.py --- Data check succeeded
+2022-07-09 15:12:17,033 --- INFO --- server.py --- Messaging ended
+2022-07-09 18:40:27,853 --- INFO --- server.py --- 
+
+--------------------------------------------------------------------------------------------------------------
+
+2022-07-09 18:40:27,864 --- INFO --- server.py --- The server started it`s work at 26.232.94.177 : 7777 
+and ready to listen at once 10 clients
+2022-07-09 18:40:50,080 --- INFO --- server.py --- New client connected from the address ('26.232.94.177', 58913) 
+2022-07-09 18:40:50,081 --- INFO --- server.py --- Started to check message from client
+2022-07-09 18:40:50,081 --- INFO --- server.py --- Data check succeeded
+2022-07-09 18:40:50,081 --- INFO --- server.py --- Messaging ended
+2022-07-09 18:41:03,918 --- INFO --- server.py --- New client connected from the address ('26.232.94.177', 58920) 
+2022-07-09 18:41:03,918 --- INFO --- server.py --- Started to check message from client
+2022-07-09 18:41:03,918 --- INFO --- server.py --- Data check succeeded
+2022-07-09 18:41:03,918 --- INFO --- server.py --- Messaging ended

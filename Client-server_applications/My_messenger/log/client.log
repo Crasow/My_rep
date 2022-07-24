@@ -1,0 +1,32 @@
+2022-07-09 14:54:35,996 --- INFO --- client.py --- kek
+2022-07-09 14:54:36,183 --- INFO --- client.py --- kek
+2022-07-09 14:59:28,545 --- INFO --- client.py --- kek
+2022-07-09 15:10:02,627 --- INFO --- client.py --- Connecting cucceeded
+2022-07-09 15:10:02,627 --- INFO --- client.py --- Message to server sended
+2022-07-09 15:10:02,627 --- INFO --- client.py --- Processing answer from the server...
+2022-07-09 15:10:02,628 --- INFO --- client.py --- Everithng is OK
+2022-07-09 15:10:02,628 --- INFO --- client.py --- Received a response from the server 200 : OK
+2022-07-09 15:10:17,976 --- INFO --- client.py --- Connecting cucceeded
+2022-07-09 15:10:17,976 --- INFO --- client.py --- Message to server sended
+2022-07-09 15:10:17,976 --- INFO --- client.py --- Processing answer from the server...
+2022-07-09 15:10:17,977 --- INFO --- client.py --- Received a response from the server 200 : OK
+2022-07-09 15:12:05,597 --- INFO --- client.py --- Connecting succeeded
+2022-07-09 15:12:05,597 --- INFO --- client.py --- Message to server sended
+2022-07-09 15:12:05,597 --- INFO --- client.py --- Processing answer from the server...
+2022-07-09 15:12:05,597 --- INFO --- client.py --- Received a response from the server 200 : OK
+2022-07-09 15:12:11,111 --- INFO --- client.py --- Connecting succeeded
+2022-07-09 15:12:11,111 --- INFO --- client.py --- Message to server sended
+2022-07-09 15:12:11,112 --- INFO --- client.py --- Processing answer from the server...
+2022-07-09 15:12:11,112 --- INFO --- client.py --- Received a response from the server 200 : OK
+2022-07-09 15:12:17,033 --- INFO --- client.py --- Connecting succeeded
+2022-07-09 15:12:17,033 --- INFO --- client.py --- Message to server sended
+2022-07-09 15:12:17,033 --- INFO --- client.py --- Processing answer from the server...
+2022-07-09 15:12:17,033 --- INFO --- client.py --- Received a response from the server 200 : OK
+2022-07-09 18:40:50,080 --- INFO --- client.py --- Connecting succeeded
+2022-07-09 18:40:50,080 --- INFO --- client.py --- Message to server sended
+2022-07-09 18:40:50,081 --- INFO --- client.py --- Processing answer from the server...
+2022-07-09 18:40:50,081 --- INFO --- client.py --- Received a response from the server 200 : OK
+2022-07-09 18:41:03,918 --- INFO --- client.py --- Connecting succeeded
+2022-07-09 18:41:03,918 --- INFO --- client.py --- Message to server sended
+2022-07-09 18:41:03,918 --- INFO --- client.py --- Processing answer from the server...
+2022-07-09 18:41:03,918 --- INFO --- client.py --- Received a response from the server: TI PIDOR
