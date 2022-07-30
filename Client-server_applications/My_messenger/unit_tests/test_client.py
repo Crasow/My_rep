@@ -1,10 +1,16 @@
 import unittest
 
-from common_for_tests.client import presence, process_ans
-from common_for_tests.vars import USER, STATUS_HERE, GUEST, \
+# from common_for_tests.client import presence, process_ans
+# from common_for_tests.vars import USER, STATUS_HERE, GUEST, \
+#     ACTION, PRESENCE, TIME, ACC_LOGIN, STATUS, RESPONSE, ERROR, \
+#     ERROR_TEXT
+
+
+sys.path.append('../')
+from common.client import presence, process_ans
+from common.vars import USER, STATUS_HERE, GUEST, \
     ACTION, PRESENCE, TIME, ACC_LOGIN, STATUS, RESPONSE, ERROR, \
     ERROR_TEXT
-
 
 class TestClass(unittest.TestCase):
     """
@@ -28,8 +34,3 @@ class TestClass(unittest.TestCase):
                        ERROR: ERROR_TEXT}
         test = process_ans(not_ok_data)
         self.assertEqual(test, f'400 : {not_ok_data[ERROR]}')
-
-    def test_no_response(self):
-        self.assertRaises(ValueError, process_ans({}), {ERROR:'Bad Request'})
-
-

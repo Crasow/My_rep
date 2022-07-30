@@ -48,3 +48,21 @@ and ready to listen at once 10 clients
 2022-07-09 18:41:03,918 --- INFO --- server.py --- Started to check message from client
 2022-07-09 18:41:03,918 --- INFO --- server.py --- Data check succeeded
 2022-07-09 18:41:03,918 --- INFO --- server.py --- Messaging ended
+2022-07-24 18:42:54,170 --- INFO --- server.py --- 
+
+--------------------------------------------------------------------------------------------------------------
+
+2022-07-24 18:42:54,172 --- INFO --- server.py --- The server started it`s work at 26.232.94.177 : 7777 
+and ready to listen at once 10 clients
+2022-07-24 18:43:08,596 --- INFO --- server.py --- 
+
+--------------------------------------------------------------------------------------------------------------
+
+2022-07-24 18:43:08,596 --- INFO --- server.py --- The server started it`s work at 26.232.94.177 : 7777 
+and ready to listen at once 10 clients
+2022-07-24 18:49:07,434 --- INFO --- server.py --- 
+
+--------------------------------------------------------------------------------------------------------------
+
+2022-07-24 18:49:07,434 --- INFO --- server.py --- The server started it`s work at 26.232.94.177 : 7777 
+and ready to listen at once 10 clients

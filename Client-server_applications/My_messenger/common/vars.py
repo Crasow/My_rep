@@ -1,11 +1,12 @@
+import os
 import socket
 import sys
-import os
+
 sys.path.append(os.path.join(os.getcwd(), '..'))
 PORT = 7777
 
 IP = (socket.gethostbyname(socket.gethostname()))
-print (socket.gethostbyname(socket.gethostname()))
+print(socket.gethostbyname(socket.gethostname()))
 
 ENCODING = 'utf-8'
 
