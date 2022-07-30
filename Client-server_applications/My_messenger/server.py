@@ -10,7 +10,7 @@ from common.vars import PORT, IP, ACTION, TIME, \
 # Создание объект логгера на сервере
 logger = logging.getLogger('server.logger')
 
-
+# Тестим всякую дрянь
 def data_check(data):
     logger.info(f'Started to check message from client')
     if ACTION in data and TIME in data and USER in data \
