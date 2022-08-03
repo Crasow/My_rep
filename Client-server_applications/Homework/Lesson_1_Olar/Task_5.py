@@ -1,4 +1,15 @@
+"""
+Задание 5.
+
+Выполнить пинг веб-ресурсов yandex.ru, youtube.com и
+преобразовать результаты из байтовового в строковый тип на кириллице.
+
+Подсказки:
+--- используйте модуль chardet, иначе задание не засчитается!!!
+"""
+
 import subprocess
+
 import chardet
 
 args = ['ping', 'yandex.ru']
@@ -15,4 +26,3 @@ for line in ytb_ping.stdout:
     var = chardet.detect(line)
     line = line.decode(var['encoding'])
     print(line)
-subprocess.Popen()

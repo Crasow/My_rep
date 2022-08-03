@@ -11,10 +11,7 @@
 --- используйте списки и циклы, не дублируйте функции
 """
 
-a = b'class'
-b = b'function'
-c = b'method'
-my_list = [a, b, c]
+my_list = [b'class', b'function', b'method']
 
 for el in my_list:
     print(el)
