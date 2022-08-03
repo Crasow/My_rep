@@ -4,7 +4,7 @@ import json
 import socket
 import sys
 
-sys.path.append('/Client-server_applications/Homework/Lesson-3/Example/common')
+sys.path.append('/Client-server_applications/Homework/Lesson_3_Olar/Example/common')
 from common.utils_for_ex import get_message, send_message
 from common.vars_for_ex import ACTION, ACCOUNT_NAME, RESPONSE, MAX_CONNECTIONS, \
     PRESENCE, TIME, USER, ERROR, DEFAULT_PORT
