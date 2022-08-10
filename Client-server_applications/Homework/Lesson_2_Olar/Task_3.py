@@ -1,3 +1,4 @@
+
 import yaml
 
 message_data = {'recipients': ['Katya', 'NeKatya', 'TochnoKatya'],

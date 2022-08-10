@@ -10,13 +10,12 @@
 придумайте как это сделать
 """
 try:
-    # a = b'функция'
+    a = eval("b'функция'")
     b = b'attribute'
-    # c = b'класс'
+    c = bytes('класс', encoding='ascii')
     d = b'type'
-except SyntaxError:
-    print('Not ASCII')
-
+except SyntaxError or UnicodeEncodeError:
+    print('You have Error, dude')
 """
 В байты нельзя перевести содержимое любой строки, что содержит
 один или более не ASCII символ
